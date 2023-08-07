@@ -37,14 +37,7 @@ export default function (props) {
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
           <button className="btn btn-primary" type="submit">Search</button>
         </form>*/}
-        <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div className="btn-group me-2" role="group" aria-label="First group">
-    <button type="button"  className="btn btn-primary" onClick={()=>{toggleMode('primary')}}></button>
-    <button type="button"  className="btn btn-success"onClick={()=>{toggleMode('success')}}></button>
-    <button type="button"  className="btn btn-danger"onClick={()=>{toggleMode('danger')}}></button>
-    <button type="button" className="btn btn-warning"onClick={()=>{toggleMode('warning')}}></button>
-  </div>
-</div>
+        
         <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
   <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault"/>
   <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
